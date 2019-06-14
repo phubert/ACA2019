@@ -1,0 +1,170 @@
+\documentclass[10pt]{beamer}
+\mode<presentation>
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage[francais]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry,listings} 
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{mathrsfs} 
+\usepackage{color,xcolor,moreverb}	
+\usepackage[center]{caption}
+\usepackage{amsfonts,amsmath,amssymb,mathtools}
+\usepackage[mathcal]{euscript}
+\usepackage{tikz,genyoungtabtikz}
+\usepackage{etex}
+\usepackage{ulem} 
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{svg}
+\usepackage{bbm, bm}
+
+\newcommand{\blue}[1]{{\color[rgb]{0,0.4,1}{#1}}}
+\newcommand{\red}[1]{{\color{red}{#1}}}
+\newcommand{\green}[1]{{\color[rgb]{0,0.55,0.25}{#1}}}
+\newcommand{\purple}[1]{{\color[rgb]{.7,.2,1}{#1}}}
+\newcommand{\orange}[1]{{\color[rgb]{1,.35,0}{#1}}}
+
+\definecolor{purple}{rgb}{.6,.2,1}
+\definecolor{blue}{rgb}{0,0.6,1}
+\definecolor{green2}{rgb}{0,0.55,0.25}
+
+\usetheme{Boadilla}
+
+\setbeamertemplate{blocks} [rounded] [shadow=true]
+\setbeamersize{text margin left=8mm,text margin right=8mm}
+
+\newenvironment{myblock}[3]{%
+	\setbeamercolor{block body}{#2}
+	\setbeamercolor{block title}{#3}
+	\begin{block}{#1}}{\end{block}}
+
+\setbeamertemplate{footline}
+{
+	\leavevmode%
+	%\hbox{%
+		\null \hfill
+		\begin{beamercolorbox}[wd=.2\paperwidth,ht=2.25ex,dp=1ex,right]{title in head/foot}%
+			\insertframenumber{} / \inserttotalframenumber\hspace*{1ex} \hspace*{.5cm}
+		\end{beamercolorbox}%}%
+		\vskip0pt%
+}
+
+
+\newcommand{\diagramme}{\YFrench \Yboxdim{12pt}\yng}
+\newcommand{\minidiagramme}{\YFrench \Yboxdim{6pt}\yng}
+\newcommand{\tableau}{\YFrench \Yboxdim{12pt}\young}
+\newcommand{\bigtableau}{\YFrench \Yboxdim{28pt}\young}
+%\newcommand{\diagramme}{\Yboxdim{10pt}\yng}  % notation anglaise
+%\newcommand{\tableau}{\Yboxdim{10pt}\young}  % notation anglaise
+
+\DeclareMathOperator{\Enk}{\mathcal{E}_n^{\langle k\rangle}}
+\DeclareMathOperator{\Mmuk}{\mathcal{M}_{\mu}^{\langle k\rangle}}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\Harm}{Harm}
+\DeclareMathOperator{\GLr}{GL_r}
+\DeclareMathOperator{\GL}{GL}
+\DeclareMathOperator{\Sn}{\mathbb{S}_n}
+\DeclareMathOperator{\Sym}{\mathbb{S}}
+
+\newcommand{\QQ}{\mathbb{Q}}
+\newcommand{\NN}{\mathbb{N}}
+\newcommand{\CC}{\mathbb{C}}
+
+\newcommand{\Ek}[2]{\mathcal{E}_#1^{\langle #2\rangle}}
+
+
+%  Contenu de la page de titre 
+\title[]{Interactive tutorials, an example on symmetric	functions}
+\author{Pauline Hubert \\ Mélodie Lapointe}
+\institute{Université du Québec à Montréal \\ (UQAM)}
+\date[]{16 juillet 2019}
+
+
+%-----------------------------------------
+%    Debut document   
+% ----------------------------------------
+\begin{document}
+
+% Première slide
+\begin{frame}
+\titlepage
+
+\begin{center}	
+ACA 2019 \\
+Montreal
+\end{center}
+
+\end{frame}
+
+% Plan
+%\begin{frame}\frametitle{Plan}
+%\tableofcontents[hideothersubsections]
+%\end{frame} 
+
+\section{Intro}
+
+%\begin{frame}\frametitle{}
+%
+%\green{green} \blue{blue} \purple{purple} \red{red} \orange{orange}
+%
+%\vspace{.5cm} 
+%
+%\begin{myblock}{purple}{}{fg=black, bg=blue!50!red!35!white}
+%	Stuff
+%\end{myblock}
+%
+%\begin{myblock}{green}{}{fg=black, bg=blue!30!green!50!white}
+%	Stuff
+%\end{myblock}
+%
+%\begin{myblock}{red}{}{fg=black, bg=red!40!white}
+%	Stuff
+%\end{myblock}
+%
+%\begin{myblock}{blue}{}{fg=black, bg=green!30!blue!40!}
+%	Stuff
+%\end{myblock}
+%
+%\begin{myblock}{orange}{}{fg=black, bg=orange!80!red!60!}
+%	Stuff
+%\end{myblock}
+%
+%\end{frame}
+
+\begin{frame}\frametitle{}
+\Large
+\begin{center}
+	\red{ACA} 
+	\newline
+	
+	\hspace{2cm}{\normalsize\blue{python}}
+	
+	\blue{SageMath}
+	\newline
+	
+	\hspace{2cm} \purple{symmetric functions} 
+	\newline
+	\vspace{.3cm}
+	
+	\hspace{-2cm}
+	{\normalsize \orange{interactive tutorials}}
+	\newline
+	
+	\hspace{4cm}
+	{\normalsize \green{better}}
+\end{center}	
+\end{frame}
+
+\section{Sage}
+
+\begin{frame}\frametitle{\blue{Sage}}
+
+\end{frame}
+
+\newcounter{lastframe}
+\setcounter{lastframe}{\insertframenumber}
+\setcounter{framenumber}{\thelastframe}
+
+\end{document}
