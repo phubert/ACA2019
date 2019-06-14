@@ -1,0 +1,12 @@
+*.pyc
+*.so
+*.c
+*.pdf
+*.ipynb_checkpoints
+*.aux
+*.bbl
+*.blg
+*.log
+*.synctex.gz
+*.toc
+*.tikz
