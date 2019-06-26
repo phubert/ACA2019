@@ -77,7 +77,7 @@
 
 %  Contenu de la page de titre 
 \title[]{Interactive tutorials, an example on symmetric	functions}
-\author{Pauline Hubert \\ Mélodie Lapointe}
+\author{Pauline Hubert \\ with Mélodie Lapointe}
 \institute{Université du Québec à Montréal \\ (UQAM)}
 \date[]{16 juillet 2019}
 
@@ -136,32 +136,135 @@ Montreal
 \begin{frame}\frametitle{}
 \Large
 \begin{center}
-	\red{ACA} 
+	\red{Computational Algebra} 
 	\newline
 	
-	\hspace{2cm}{\normalsize\blue{python}}
+	\hspace{3cm}{\normalsize\orange{python}}
 	
-	\blue{SageMath}
+	\hspace{-1cm}\blue{SageMath}
 	\newline
 	
-	\hspace{2cm} \purple{symmetric functions} 
+	\hspace{3cm} \green{symmetric functions} 
 	\newline
 	\vspace{.3cm}
 	
-	\hspace{-2cm}
-	{\normalsize \orange{interactive tutorials}}
-	\newline
+	\hspace{-1.5cm}
+	{\normalsize \purple{interactive tutorials}}
 	
-	\hspace{4cm}
-	{\normalsize \green{better}}
+%	\hspace{4cm}
+%	{\normalsize \orange{better}}
 \end{center}	
 \end{frame}
 
 \section{Sage}
 
-\begin{frame}\frametitle{\blue{Sage}}
+\begin{frame}\frametitle{\blue{SageMath}}
+
+\vspace{-.8cm}
+
+\begin{figure}[h]
+	\raggedleft
+	\includegraphics[scale=.25]{logo.png}
+\end{figure}
+
+\vspace{1cm}
+
+\begin{itemize}
+	\item Free open source mathematical software
+	\item Started by William Stein in 2005
+	\item Built on top of many open source softwares (GAP, Maxima, R, ...)
+	\item In Python 
+	\item Hundreds of worldwide contributors
+	\item Can be installed on Linux, Mac or Windows or used online (CoCalc.com)
+	\item With Jupyter notebook 
+\end{itemize}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.05]{jupyter_logo.png}
+	\includegraphics[scale=.1]{python.png}
+\end{figure}
 
 \end{frame}
+
+\begin{frame}\frametitle{\blue{SageMath}}
+
+\vspace{-.4cm}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[scale=.26]{jupyter.png}
+\end{figure}
+
+\end{frame}
+
+\section{Tutorial Symmetric Functions}
+
+\begin{frame}\frametitle{\purple{Tutorial on Symmetric Functions}}
+
+Two reference pages for symmetric functions in Sage. \newline 
+\begin{enumerate}
+	\item Documentation : \\
+	\url{http://doc.sagemath.org/html/en/reference/combinat/sage/combinat/sf/sfa.html} \newline
+	 
+	\item Previous tutorial : \\
+	\url{http://doc.sagemath.org/html/en/reference/combinat/sage/combinat/sf/sf.html#sage.combinat.sf.sf.SymmetricFunctions} \newline
+\end{enumerate}
+
+\end{frame}
+
+\begin{frame}\frametitle{\purple{Tutorial on Symmetric Functions}}
+
+Why a new tutorial on symmetric functions ?  \newline
+
+\begin{itemize}
+	\item More maths and more definitions : accessible with few knowledge on symmetric functions
+	\item Add exercises in addition to examples
+	\item Add interactivity \newline
+\end{itemize}
+
+\textbf{The new tutorial:} \newline
+
+\centering
+\url{https://more-sagemath-tutorials.readthedocs.io/en/latest/tutorial-symmetric-functions.html}
+
+\end{frame}
+
+\section{An exercise}
+
+\begin{frame}\frametitle{\green{Discriminant of a polynomial using symmetric functions}}
+
+Let see an interactive exercise with Jupyter notebook using symmetric functions. 
+
+Experimented during Sage days
+
+\end{frame}
+
+
+\section{Conclusion}
+
+\begin{frame}\frametitle{\orange{Conclusion}}
+
+\begin{itemize}
+	\item The new tutorial could still be better : more definitions, exercises, etc.
+	\item Compromise between a very complete but not too long tutorial.\newline
+	
+	\item A tool to learn/teach mathematics
+	\item Learn, experiment and practice in the same environment
+	\item Can be use for research : experiments, take notes, write theorem, interactive proofs and interactive examples at the same place
+	\item Interactive slides in Jupyter from a worksheet
+	\item Access notebooks online with Binder 
+\end{itemize}
+
+\end{frame}
+
+\begin{frame}
+\Huge
+\begin{figure}[h]
+	\bigtableau({\purple{h}}{\red{a}}{\orange{n}}{\green{k}},{\blue{T}})\hspace*{0cm} \bigtableau({\red{o}}{\orange{u}},{\purple{Y}})
+\end{figure}
+\end{frame}
+
 
 \newcounter{lastframe}
 \setcounter{lastframe}{\insertframenumber}
