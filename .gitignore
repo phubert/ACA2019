@@ -13,3 +13,5 @@
 *.nav
 *.out
 *.snm
+aca_slides.*
+*.sty
